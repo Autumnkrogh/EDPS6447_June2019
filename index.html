@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  float: center;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Applying for Financial Aid Instructions</h2>
+<p>Follow the instructions below to see what financial aid you qualify for.</p>
+<a href="http://www.slcc.edu/">Click here to return back to SLCC Homepage</a>   
+
+    
+<h4>1) Complete Student Federal Student Aid ID</h4> 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for step 1</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://fsaid.ed.gov/npas/index.htm">A. Go to the FSA ID website</a>
+    <a>B. Create an FSA ID for the Student. Enter student information, including a phone number and email. </a>
+    <a>C. If the student is dependent, create an FSA ID for the parent. HINT: emails and phone numbers must be different for each FSA ID account</a>
+  </div>
+</div>
+
+    
+    
+
+<h4>2) Apply at Free Application for Federal Student Aid</h4> 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for step 2</button>
+  <div id="myDropdown" class="dropdown-content">
+     <a href="https://studentaid.ed.gov/sa/fafsa">A. Go to FAFSA</a>
+    <a>B. Enter SLCC Federal School Code: 005220</a>
+    <a>C. Using information from 2017 taxes, fill out both student and parent tax information. Use IRS Data Retrieval Tool when possible</a>
+  </div>
+</div>
+    
+   
+
+
+<h4>3) SLCC recieives financial aid information from FASFA website</h4>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for step 3</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a>A. Student should check email he/she provided for their FSA User name.</a>
+    <a href="http://www.slcc.edu/google/bruinmail.aspx">B. Student should check their Bruinmail for updates regarding Financial Aid </a>
+    <a href="http://www.slcc.edu/financialaid/locations-and-hours.aspx">OR contact the Finanical Aid Office. Student must have a FERPA pin to discuss financial matters over the phone.</a>
+  </div>
+</div>
+ 
+
+
+<h4>4) Student completes additonal forms provided by SLCC</h4>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for step 4</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://auth.slcc.edu:9443/authenticationendpoint/login.do?commonAuthCallerPath=%252Fcas%252Flogin&forceAuth=false&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=52742122-5880-4630-896b-54112dcff38e&relyingParty=LuminisUserPortal&type=cassso&sp=LuminisUserPortal&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL">A. Log on to MySLCC</a>
+    <a href="#about">B. Click on "Financial Aid and Scholarships" tab</a>
+    <a href="#contact">C. Navigate to "Financial Aid Requirments" panel</a>
+    <a> D. Complete all forms. Each form should recieve a green checkmark. Checkmarks are given after 3-5 buisiness days</a>
+  </div>
+</div>
+
+
+
+<h4>5) Student checks back with SLCC's Financial Aid Office</h4>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for step 5</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://auth.slcc.edu:9443/authenticationendpoint/login.do?commonAuthCallerPath=%252Fcas%252Flogin&forceAuth=false&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=52742122-5880-4630-896b-54112dcff38e&relyingParty=LuminisUserPortal&type=cassso&sp=LuminisUserPortal&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL">A. Log on to MySLCC</a>
+    <a>B. Click on "Financial Aid and Scholarships" tab</a>
+    <a>C. Click on "Financial Aid Award"</a>
+    <a>D. Select aid award year.</a>
+    <a>E. Click "accept award"</a>
+  </div>
+</div>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
